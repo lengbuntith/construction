@@ -1,6 +1,13 @@
 <template>
   <div class="product-detail bg-light p-4">
-    <b-row class="border bg-white mx-2 font-weight-bold p-4"> Product Title </b-row>
+      <div v-for="pro in product" :key="pro.id">
+          <div v-if="pro.id == $route.params.id">
+            {{pro.id}} - {{pro.name}}
+  
+          </div>
+      </div>
+        
+    <!-- <b-row class="border bg-white mx-2 font-weight-bold p-4"> Product Title </b-row>
     <b-row class="m-2 mt-1 bg-white">
       <b-col cols="4" class="border text-center p-4">
         <img src="../assets/am-g001(6).png" alt="" />
@@ -31,12 +38,25 @@
     <b-row class="p-4">
       <img class="pb-4" style="width:100%" src="../assets/big.png" alt="" />
       <img class="pb-4" style="witdh:100%" src="../assets/b2.png" alt="" />
-    </b-row>
+    </b-row> -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props:["id"],
+  data(){
+    return{
+      product:[
+        {id:1, name:'a'},
+        {id:2, name:'b'},
+        {id:4, name:'d'}
+      ]
+    }
+  }
+};
+  
+
 </script>
 
 <style scoped>

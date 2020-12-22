@@ -1,15 +1,20 @@
 <template>
-    <div class="category">
-        category
+    <div class="category pl-3">
+        
     </div>
 </template>
 
 <script>
-    export default {
+
+export default {
+  components: {  },
         
     }
 </script>
 
 <style scoped>
+    .road{
+        display: none !important;
+    }
 
 </style>

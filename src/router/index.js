@@ -34,8 +34,8 @@ const routes = [
     component: () => import('../views/OurEvent.vue')
   },
   {
-    path: '/product',
-    name: 'Product',
+    path: '/product/',
+    name: 'product',
     component: () => import('../views/Product.vue')
   },
   {
@@ -44,8 +44,8 @@ const routes = [
     component: () => import('../views/Service.vue')
   },
   {
-    path: '/product-detail',
-    name: 'Product Detail',
+    path: '/product-detail/:id',
+    name: 'product-detail',
     component: () => import('../views/ProductDetail.vue')
   },
   {

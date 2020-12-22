@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="event pl-3">
         our event
     </div>
 </template>

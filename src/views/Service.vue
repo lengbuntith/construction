@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="serivce pl-3">
         service
     </div>
 </template>

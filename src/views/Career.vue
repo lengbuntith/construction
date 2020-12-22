@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="career pl-3">
         career
     </div>
 </template>
