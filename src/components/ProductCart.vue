@@ -1,36 +1,15 @@
 <template>
-    <div class="product-cart">
-        <b-card-group deck class="my-2 pr-3">
+        
         <!-- <b-card-text>
           <router-link  :to="{ name: 'product-detail', params: { id: product.id } }">{{product.name}}</router-link>
        </b-card-text> -->
-
-      <b-card img-src="../assets/am-mp001.png" img-alt="Card image" img-top>
+    
+      <b-card class="col ml-3 p-3 shadow-sm bg-white" img-src="../assets/am-g001(6).png" img-alt="Card image" img-top>
         <b-card-text>
-          Some quick e.
+          <router-link style="color: black; text-decoration: none;" :to="{name: 'product-detail', params: {id: product.id}}" > {{product.name}}  </router-link>
         </b-card-text>
       </b-card>
 
-      <b-card img-src="../assets/am-mp001.png" img-alt="Card image" img-top>
-        <b-card-text>
-          Some quick e.
-        </b-card-text>
-      </b-card>
-
-      <b-card img-src="../assets/am-mp001.png" img-alt="Card image" img-top>
-        <b-card-text>
-          Some quick e.
-        </b-card-text>
-      </b-card>
-
-      <b-card img-src="../assets/am-mp001.png" img-alt="Card image" img-top>
-        <b-card-text>
-          Some quick e.
-        </b-card-text>
-      </b-card>
-
-    </b-card-group>
-    </div>
 </template>
 
 <script>
@@ -46,11 +25,5 @@
 </script>
 
 <style scoped>
-    .card{
-        padding: 20px;
-    }
-
-    .card-deck .card{
-        margin-right: 0;
-    }
+    
 </style>

@@ -1,6 +1,7 @@
 <template>
-  <div class="home pl-3">
+  <div class="home">
     <b-carousel
+    
       id="carousel-fade"
       style="text-shadow: 0px 0px 2px #000"
       fade
@@ -22,8 +23,8 @@
       ></b-carousel-slide>
     </b-carousel>
 
-    <b-row class="bg-light border m-0 p-3" align-h="between">
-      <b-col class="text-left">Category Title</b-col>
+    <b-row class="catbar border m-0 py-3   shadow-sm rounded-bottom" align-h="between">
+      <b-col class="text-left text-uppercase font-weight-bold">Rood Material</b-col>
       <b-col class="text-right"
         ><router-link class="text-danger road" to="/category"
           >View All</router-link
@@ -31,11 +32,66 @@
       >
     </b-row>
 
-    <product-cart
+    <b-row class="mt-3 mr-1 pl-3">
+      <product-cart
       v-for="product in products"
       :key="product.id"
       :product="product"
     />
+    </b-row>
+
+
+    <b-row class="catbar border m-0 p-3  rounded-bottom mt-5 shadow-sm" align-h="between">
+      <b-col class="text-left text-uppercase font-weight-bold">floor material</b-col>
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 pl-3">
+      <product-cart
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+    />
+    </b-row>
+
+    <b-row class="catbar border m-0 p-3 mt-5 rounded-bottom shadow-sm" align-h="between">
+      <b-col class="text-left text-uppercase font-weight-bold">wall decor material</b-col>
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 pl-3">
+      <product-cart
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+    />
+    </b-row>
+
+    <b-row class="catbar border m-0 p-3 mt-5 rounded-bottom shadow-sm" align-h="between">
+      <b-col class="text-left text-uppercase font-weight-bold">bathroom meterial</b-col>
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 mb-5 pl-3">
+      <product-cart
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+    />
+    </b-row>
+    
   </div>
 </template>
 
@@ -51,12 +107,24 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "a" },
-        { id: 2, name: "b" },
-        { id: 3, name: "c" },
-        { id: 4, name: "d" },
+        { id: 1, name: "aAsiana M" },
+        { id: 2, name: "Asiana Mb" },
+        { id: 3, name: " Asiana Mc" },
+        { id: 4, name: "Asiana M d" },
       ],
     };
   },
 };
 </script>
+
+<style scoped>
+
+.rounded-bottom {
+    border-bottom-left-radius: 1rem!important;
+}
+
+.catbar{
+  background-color: #fff;
+  
+}
+</style>

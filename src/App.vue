@@ -1,13 +1,15 @@
 <template>
-  <div id="app" class="container-lg">
+  <div id="app" class="bg-light">
     
-      <b-row class="header justify-content-center border">
+    
+     <b-row class="header bg-light no-gutters justify-content-center border">
         <img src="./assets/logo.png" width="100px" alt="" />
       </b-row>
     
 
-    <b-row class="menu mt-1 border">
-      <b-tabs
+
+    <b-row  class="menu no-gutters mb-2 bg-white justify-content-center shadow-sm">
+      <b-tabs class=""
         active-nav-item-class="text-uppercase bg-danger text-white "
         active-tab-class="font-weight-bold text-success"
       >
@@ -68,66 +70,80 @@
             }
           "
         ></b-tab>
+
       </b-tabs>
     </b-row>
-      <b-row class="mt-1 justify-content-center">
-        <b-col class="sidebar bg-danger border" cols="3">
+  
+  <b-container fluid="lg">
+
+      <b-row class="  no-gutters justify-content-center mt-1">
+        <b-col class="sidebar border shadow-sm" cols="3">
           <b-col
             >
-            
-              <b-list-group>
+              
+              <b-list-group class="mt-3 shadow">
                 
-                <div class="mt-4 bg-primary text-center text-white font-weight-bold p-2">Product by category</div>
-                <b-list-group-item>Cras justo odio</b-list-group-item>
-                <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-                <b-list-group-item>Morbi leo risus</b-list-group-item>
-                <b-list-group-item>Porta ac consectetu</b-list-group-item>
-                <b-list-group-item>Vestibulum at eros</b-list-group-item>
+                <div class="bg-danger text-center text-white font-weight-bold p-2">Product by Category</div>
+                <b-list-group-item class="text-uppercase">roof material</b-list-group-item>
+                <b-list-group-item class="text-uppercase">floor material</b-list-group-item>
+                <b-list-group-item class="text-uppercase">wall decor material</b-list-group-item>
+                <b-list-group-item class="text-uppercase">bathroom material</b-list-group-item>
+                <b-list-group-item class="text-uppercase">other</b-list-group-item>
               </b-list-group>
             
           </b-col>
+
           <b-col
             >
-            
-              <b-list-group>
+              
+              <b-list-group class="mt-4 shadow">
                 
-                <div class="mt-4 bg-primary text-center text-white font-weight-bold p-2">Product by category</div>
-                <b-list-group-item>Cras justo odio</b-list-group-item>
-                <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-                <b-list-group-item>Morbi leo risus</b-list-group-item>
-                <b-list-group-item>Porta ac consectetu</b-list-group-item>
-                <b-list-group-item>Vestibulum at eros</b-list-group-item>
+                <div class="bg-danger text-center text-white font-weight-bold p-2">Product by Country</div>
+                <b-list-group-item class="text-uppercase">khmer</b-list-group-item>
+                <b-list-group-item class="text-uppercase">thailand</b-list-group-item>
+                <b-list-group-item class="text-uppercase">vietname</b-list-group-item>
+                <b-list-group-item class="text-uppercase">china</b-list-group-item>
+                <b-list-group-item class="text-uppercase">malaysia</b-list-group-item>
+                <b-list-group-item class="text-uppercase">other</b-list-group-item>
               </b-list-group>
             
           </b-col>
+
           <b-col
             >
-            
-              <b-list-group>
+              
+              <b-list-group class="mt-4">
                 
-                <div class="mt-4 bg-primary text-center text-white font-weight-bold p-2">Product by category</div>
-                <b-list-group-item>Cras justo odio</b-list-group-item>
-                <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-                <b-list-group-item>Morbi leo risus</b-list-group-item>
-                <b-list-group-item>Porta ac consectetu</b-list-group-item>
-                <b-list-group-item>Vestibulum at eros</b-list-group-item>
+                <div class="shadow-sm bg-danger text-center text-white font-weight-bold p-2">Product & Comapany</div>
+                
+                  <img class="mt-2" src="./assets/butterfly.jpg" alt="">
+                  <img class="mt-2" src="./assets/cpac.jpg" alt="">
+                  <img class="mt-2" src="./assets/excella.jpg" alt="">
+                  <img class="mt-2" src="./assets/gomdatviet.jpg" alt="">
+                
+                
               </b-list-group>
             
           </b-col>
+
+  
+          
         </b-col>
 
-        <b-col class="content p-0" cols="9">
+        <b-col class="content p-0 no-gutters" cols="9">
           <router-view />
         </b-col>
+      
       </b-row>
+</b-container>
+
+    <!-- <b-row class="footer no-gutters bg-danger" >
+      footer
+    </b-row> -->
+
     <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
   </div>
-
-
-
-
-
 
 </template>
 <script>
@@ -156,6 +172,10 @@ export default {
 .nav-link:hover {
   color: white;
   background-color: red;
+}
+
+.sidebar{
+  background-color: firebrick;
 }
 
 

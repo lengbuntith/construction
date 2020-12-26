@@ -1,55 +1,168 @@
 <template>
-    <div class="product pl-3">
-    <b-row class="bg-light border m-0 p-3" align-h="between" v-for="probycat in probycats" :key="probycat.id">
-      <b-col class="text-left">{{probycat.catname}}</b-col>
-      <b-col class="text-right"
-        ><router-link class="text-danger road" 
-          :to="{ name: 'category', params: { id: probycat.id } }"  >View All</router-link
-        ></b-col
+  <div class="product mb-5 ">
 
+    <b-row
+      class="catbar border m-0 py-3  shadow-sm rounded-bottom"
+      align-h="between"
+    >
+      <b-col class="text-left text-uppercase font-weight-bold"
+        >Category Title</b-col
+      >
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
       >
     </b-row>
 
-    <!-- <b-card-group deck class="my-2 pr-3">
+    <b-row class="mt-3 mr-1 pl-3">
+      <b-card
+        v-for="product in products"
+        :key="product.id"
+        class="col ml-3 p-3 shadow-sm bg-white"
+        img-src="../assets/am-g001(6).png"
+        img-alt="Card image"
+        img-top
+      >
         <b-card-text>
-          <router-link  :to="{ name: 'product-detail', params: { id: product.id } }">{{product.name}}</router-link>
-       </b-card-text>
-
-      <b-card img-src="../assets/am-mp001.png" img-alt="Card image" img-top>
-        <b-card-text>
-          Some quick e.
+          <router-link
+            style="color: black; text-decoration: none"
+            :to="{ name: 'product-detail', params: { id: product.id } }"
+          >
+            {{ product.name }}
+          </router-link>
         </b-card-text>
       </b-card>
+    </b-row>
 
-    </b-card-group> -->
-    </div>
+    <b-row
+      class="catbar border m-0 py-3 mt-5 shadow-sm rounded-bottom"
+      align-h="between"
+    >
+      <b-col class="text-left text-uppercase font-weight-bold"
+        >Category Title</b-col
+      >
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 pl-3">
+      <b-card
+        v-for="product in products"
+        :key="product.id"
+        class="col ml-3 p-3 shadow-sm bg-white"
+        img-src="../assets/am-g001(6).png"
+        img-alt="Card image"
+        img-top
+      >
+        <b-card-text>
+          <router-link
+            style="color: black; text-decoration: none"
+            :to="{ name: 'product-detail', params: { id: product.id } }"
+          >
+            {{ product.name }}
+          </router-link>
+        </b-card-text>
+      </b-card>
+    </b-row>
+
+    <b-row
+      class="catbar border m-0 py-3 mt-5 shadow-sm rounded-bottom"
+      align-h="between"
+    >
+      <b-col class="text-left text-uppercase font-weight-bold"
+        >Category Title</b-col
+      >
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 pl-3">
+      <b-card
+        v-for="product in products"
+        :key="product.id"
+        class="col ml-3 p-3 shadow-sm bg-white"
+        img-src="../assets/am-g001(6).png"
+        img-alt="Card image"
+        img-top
+      >
+        <b-card-text>
+          <router-link
+            style="color: black; text-decoration: none"
+            :to="{ name: 'product-detail', params: { id: product.id } }"
+          >
+            {{ product.name }}
+          </router-link>
+        </b-card-text>
+      </b-card>
+    </b-row>
+
+    <b-row
+      class="catbar border m-0 py-3 mt-5 shadow-sm rounded-bottom"
+      align-h="between"
+    >
+      <b-col class="text-left text-uppercase font-weight-bold"
+        >Category Title</b-col
+      >
+      <b-col class="text-right"
+        ><router-link class="text-danger road" to="/category"
+          >View All</router-link
+        ></b-col
+      >
+    </b-row>
+
+    <b-row class="mt-3 mr-1 pl-3">
+      <b-card
+        v-for="product in products"
+        :key="product.id"
+        class="col ml-3 p-3 shadow-sm bg-white"
+        img-src="../assets/am-g001(6).png"
+        img-alt="Card image"
+        img-top
+      >
+        <b-card-text>
+          <router-link
+            style="color: black; text-decoration: none"
+            :to="{ name: 'product-detail', params: { id: product.id } }"
+          >
+            {{ product.name }}
+          </router-link>
+        </b-card-text>
+      </b-card>
+    </b-row>
+  </div>
 </template>
 
 <script>
-
-    export default {
-        name: 'Product',
-        components: {
-        },
-       data() {
+export default {
+  name: "Product",
+  components: {},
+  data() {
     return {
-      allproduct: [
-        { id: 1, name: "a" },
-        { id: 2, name: "b" },
-        { id: 3, name: "c" },
-        { id: 4, name: "d" },
+      products: [
+        { id: 1, name: "aAsiana M" },
+        { id: 2, name: "Asiana Mb" },
+        { id: 3, name: " Asiana Mc" },
+        { id: 4, name: "Asiana M d" },
+       
       ],
-
-      probycats: [
-          {catid: 1, catname: "aaa"},
-          {catid: 2, catname: "bbb"},
-          {catid: 3, catname: "ccc"}
-      ]
     };
   },
-    }
+};
 </script>
 
 <style scoped>
+.rounded-bottom {
+  border-bottom-left-radius: 1rem !important;
+}
 
+.catbar {
+  background-color: #fff;
+}
 </style>
