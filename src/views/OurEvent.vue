@@ -28,7 +28,7 @@ import axios from 'axios'
 
         created(){
         axios
-      .get("http://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/14")
+      .get("https://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/14")
       .then((response) => {
         this.events = response.data;
       });
