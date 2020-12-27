@@ -3,7 +3,7 @@
     
     
      <b-row class="header bg-light no-gutters justify-content-center border">
-        <img src="./assets/logo.png" width="100px" alt="" />
+        <img src="./assets/logo.jpg" width="100px" alt="" />
       </b-row>
     
 
