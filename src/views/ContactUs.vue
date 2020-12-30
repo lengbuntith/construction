@@ -13,6 +13,8 @@
             <span v-html="careers.content.rendered"></span>
             
         </b-row>
+
+        
     </div>
 </template>
 

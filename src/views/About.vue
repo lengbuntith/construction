@@ -1,5 +1,5 @@
 <template>
-    <div class="career bg-white pb-5">
+    <div class="about bg-white pb-5">
         <b-row
       class="catbar border m-0 py-3 mb-3 shadow-sm rounded-bottom"
       align-h="between"
@@ -8,11 +8,11 @@
         >About company</b-col
       >
     </b-row>
-        <b-row v-if="careers" class="pl-5">
-            <!-- {{careers.title.rendered}} -->
-            <span v-html="careers.content.rendered"></span>
+        <b-row v-if="abouts" class="pl-5">
+            <span v-html="abouts.content.rendered"></span>
             
         </b-row>
+
     </div>
 </template>
 
@@ -22,7 +22,7 @@ import axios from 'axios'
 
         data(){
             return{
-                careers: []
+                abouts: [],
             }
         },
 
@@ -30,12 +30,11 @@ import axios from 'axios'
         axios
       .get("https://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/16")
       .then((response) => {
-        this.careers = response.data;
+        this.abouts = response.data;
       });
-        }
+        },
 
-
-        }
+    }
    
 </script>
 
