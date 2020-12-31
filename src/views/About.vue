@@ -9,7 +9,7 @@
       >
     </b-row>
         <b-row v-if="abouts" class="pl-5">
-            <span v-html="abouts.content.rendered"></span>
+            <span v-html="abouts"></span>
             
         </b-row>
 
@@ -22,7 +22,8 @@ import axios from 'axios'
 
         data(){
             return{
-                abouts: [],
+                abouts: '',
+                
             }
         },
 
@@ -30,7 +31,7 @@ import axios from 'axios'
         axios
       .get("https://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/16")
       .then((response) => {
-        this.abouts = response.data;
+        this.abouts = response.data.content.rendered;
       });
         },
 

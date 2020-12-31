@@ -8,9 +8,9 @@
         >contact us</b-col
       >
     </b-row>
-        <b-row v-if="careers" class="pl-5">
+        <b-row v-if="contacts" class="pl-5">
             <!-- {{careers.title.rendered}} -->
-            <span v-html="careers.content.rendered"></span>
+            <span v-html="contacts"></span>
             
         </b-row>
 
@@ -24,7 +24,7 @@ import axios from 'axios'
 
         data(){
             return{
-                careers: []
+                contacts: ''
             }
         },
 
@@ -32,7 +32,7 @@ import axios from 'axios'
         axios
       .get("https://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/18")
       .then((response) => {
-        this.careers = response.data;
+        this.contacts = response.data.content.rendered;
       });
         }
 

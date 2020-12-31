@@ -17,10 +17,6 @@
             <a href="https://www.facebook.com/MV.Trusted.Solution/"><b-icon  icon="facebook" class="mr-4" aria-hidden="true" variant="danger" scale="2"></b-icon></a>
             <a href="mailto:mv.buildingmaterial@gmail.com"><b-icon icon="google" aria-hidden="true" variant="danger" scale="2"></b-icon></a>
              
-               
-             
-             
-             
           </div>
         </div>
       </b-container>

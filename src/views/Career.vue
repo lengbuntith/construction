@@ -10,7 +10,7 @@
     </b-row>
         <b-row v-if="careers" class="pl-5">
             <!-- {{careers.title.rendered}} -->
-            <span v-html="careers.content.rendered"></span>
+            <span v-html="careers"></span>
             
         </b-row>
     </div>
@@ -22,7 +22,7 @@ import axios from 'axios'
 
         data(){
             return{
-                careers: []
+                careers: ''
             }
         },
 
@@ -30,7 +30,7 @@ import axios from 'axios'
         axios
       .get("https://admin.mvgroup-cambodia.com//wp-json/wp/v2/posts/6")
       .then((response) => {
-        this.careers = response.data;
+        this.careers = response.data.content.rendered;
       });
         }
 
