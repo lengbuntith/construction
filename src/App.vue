@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="bg-light">
-    <b-row style="background: #333333; font-size: 12px;" class="text-light p-3 no-gutters">
+    <b-row style="background: #333333; font-size: 12px;" class="top text-light p-3 no-gutters">
       <b-container fluid="lg">
         <div class="row no-gutters">
           <div class="col-3">
@@ -45,111 +45,14 @@
           <b-nav-item to="/career" class=" text-uppercase">career</b-nav-item>
           <b-nav-item to="/our-event" class=" text-uppercase">event</b-nav-item>
           <b-nav-item  to="/contact-us" class=" text-uppercase">contact us</b-nav-item>
-          <!-- <b-nav-form>
-            <b-form-input
-              size="sm"
-              class="mr-sm-2"
-              placeholder="Search"
-            ></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >Search</b-button
-            >
-          </b-nav-form> -->
-
-          <!-- <b-nav-item-dropdown text="Lang" right>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
-          </b-nav-item-dropdown> -->
-
-        <!--  <b-nav-item-dropdown right>
-            
-            <template #button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown> -->
+        
         </b-navbar-nav>
       </b-collapse>
       </b-container>
     </b-navbar>
 
-    <!-- <b-row class="header bg-light no-gutters justify-content-center  border">
-
-        <img src="./assets/logo.png" width="100px" class="my-1" alt="" />
-        <h5 style="font-size: 30px; color:red;" class="text-uppercase align-self-center">mv building materail</h5>
-      </b-row>
     
-    <b-row  class="menu no-gutters mb-2 bg-white justify-content-center shadow-sm">
-      <b-tabs class=""
-        active-nav-item-class="text-uppercase bg-danger text-white "
-        active-tab-class="font-weight-bold text-success"
-      >
-
-        <b-tab
-          title="HOME"
-          active
-          @click="
-            () => {
-              this.$router.push('/');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="ABOUT COMPANY"
-          @click="
-            () => {
-              this.$router.push('/about');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="PRODUCT"
-          @click="
-            () => {
-              this.$router.push('/product');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="SERVICE"
-          @click="
-            () => {
-              this.$router.push('/service');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="OUR EVENT"
-          @click="
-            () => {
-              this.$router.push('/our-event');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="CAREER"
-          @click="
-            () => {
-              this.$router.push('/career');
-            }
-          "
-        ></b-tab>
-        <b-tab
-          title="CONTACT US"
-          @click="
-            () => {
-              this.$router.push('/contact-us');
-            }
-          "
-        ></b-tab>
-
-      </b-tabs>
-    </b-row> -->
-
-    <b-container fluid="lg">
+    <b-container class="content" fluid="lg">
       <b-row class="no-gutters justify-content-center mt-1">
         <b-col class="sidebar border shadow-sm pb-3 rounded" cols="3">
           <b-col>
@@ -208,9 +111,9 @@
       </b-row>
     </b-container>
 
-    <b-row sticky class=" no-gutters mt-3 justify-content-center text-light p-4" style="background: #333333">
+    <div sticky class="footer row no-gutters mt-3 justify-content-center text-light p-4" style="background: #333333">
       © Copyright 2021. All rights reserved.
-    </b-row>
+    </div>
 
   </div>
 </template>
@@ -269,24 +172,7 @@ export default {
 * {
   font-family: "Montserrat", sans-serif;
 }
-/* #nav a.router-link-exact-active {
-  color: #42b983;
-} */
-/* .nav-link {
-  border-right: 1px solid #eeeeee !important;
-  color: black;
-  margin-right: 4px;
-  font-weight: bold;
-}
-.nav-link:hover {
-  color: white !important;
-  background-color: red;
-}
 
-.nav-link:active {
-  color: white !important;
-  background-color: red;
-} */
 
 .sidebar {
   background-color: firebrick;

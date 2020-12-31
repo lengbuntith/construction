@@ -7,7 +7,7 @@
           </div>
       </div> -->
         
-    <b-row class="border bg-white mx-2 font-weight-bold p-4"> Product Title </b-row>
+    <b-row class="border bg-white mx-2 font-weight-bold p-4 rounded-bottom"> Product Title </b-row>
     <b-row class="m-2 mt-1 bg-white">
       <b-col cols="4" class="border text-center p-4">
         <img src="../assets/am-g001(6).png" alt="" />
