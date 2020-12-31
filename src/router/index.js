@@ -53,6 +53,11 @@ const routes = [
     name: 'Category',
     component: () => import('../views/Category.vue')
   },
+
+  {
+    path: '/*',
+    component: () => import('../components/404.vue')
+  }
 ]
 
 const router = new VueRouter({
