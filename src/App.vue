@@ -41,7 +41,6 @@
         <b-navbar-nav class="ml-auto text font-weight-bold">
           <b-nav-item to="/" class=" text-uppercase">home</b-nav-item>
           <b-nav-item to="/about" class=" text-uppercase">about</b-nav-item>
-          <b-nav-item to="/product" class=" text-uppercase">product</b-nav-item>
           <b-nav-item to="/service" class=" text-uppercase">service</b-nav-item>
           <b-nav-item to="/career" class=" text-uppercase">career</b-nav-item>
           <b-nav-item to="/our-event" class=" text-uppercase">event</b-nav-item>
@@ -152,7 +151,7 @@
 
     <b-container fluid="lg">
       <b-row class="no-gutters justify-content-center mt-1">
-        <b-col class="sidebar border shadow-sm pb-3" cols="3">
+        <b-col class="sidebar border shadow-sm pb-3 rounded" cols="3">
           <b-col>
             <b-list-group class="mt-3 shadow">
               <div
